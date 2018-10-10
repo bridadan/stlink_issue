@@ -1,9 +1,10 @@
 #include "mbed.h"
-#include "greentea_serial.h"
+#include "greentea_test_env.h"
 
 int main() {
-    greentea_serial->printf("Listening, try entering characters to see them echoed.\r\n");
+    printf("Please type {{__sync;12345}}\r\n");
+    GREENTEA_SETUP("default_auto", 120);
+    printf("Test succeeded! Exiting.\r\n");
     while(1) {
-        greentea_serial->putc(greentea_serial->getc());
     }
 }
