@@ -3,7 +3,7 @@
 
 int main() {
     printf("Please type {{__sync;12345}}\r\n");
-    GREENTEA_SETUP("default_auto", 120);
+    GREENTEA_SETUP(120, "default_auto");
     printf("Test succeeded! Exiting.\r\n");
     while(1) {
     }
