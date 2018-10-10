@@ -1,6 +1,6 @@
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX);
+RawSerial pc(USBTX, USBRX);
 
 int main() {
     pc.printf("Listening, try entering characters to see them echoed.\r\n");
