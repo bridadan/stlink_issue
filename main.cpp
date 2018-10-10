@@ -1,5 +1,5 @@
 #include "mbed.h"
-#include "greentea_test_env.h"
+#include "test_env.h"
 
 int main() {
     printf("Please type {{__sync;12345}}\r\n");
